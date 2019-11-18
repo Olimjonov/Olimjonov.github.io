@@ -14,8 +14,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<!-- BootStrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<!-- Custom css -->
@@ -26,13 +24,45 @@
     <div id="preloader">
     	<div id="status">&nbsp;</div>
     </div>
-     
+<!-- Header -->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark ">
+		<div class="container">
+  <a class="navbar-brand" href="#home"> <img src="img/logo.png" alt="Logo" height="150px" width="150px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="start.html">START</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+</header>     
+
+
+
+
 <!-- Home -->
 <section id="home"> 
 
 <!-- Background video -->
 <video id="home-bg-video" poster="video/bg_videoimg.png" autoplay loop muted>
-<source src="video/bg_video.mp4" type="video/mp4">
+<source src="video/bg_video-small.mp4" type="video/mp4">
 <!-- <source src="video/solo.ogv" type="video/ogg">
 <source src="video/solo.webm" type="video/webm"> -->
 </video>
@@ -64,11 +94,6 @@
 	</div>
 
 </div>
-
-<!-- Arrow Down -->
-<a href="#about" id="arrow-down">
-	<img src="img/double-angle.png" alt="down" class="arrow-down">
-</a>
 </section>
 
 <!-- Home ends -->
@@ -100,14 +125,10 @@
 				<div class="col-md-6">
 					
                 <div id="about-right">
-                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                	consequat.</p>
+                	<p>Once upon a time, our story began when the creator of this website wanted to get a high mark on his coursework.
+                	Due to coursework policy we can't say the name of the creator but we will tell you that his student id is <b>00007458</b> ;)</p>
 
-                	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                	<p><b>QuizLand</b> - it is a platform of quizzes where everyone can check their knowledge. Questions are collected from different areas. </p>
                 </div>	
 				</div>
 			</div>
@@ -242,7 +263,7 @@
 <!-- Jquery -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 <!-- BootStrap -->
-	<script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+	<script src="js/bootstrap.js"></script>
 <!-- Custom -->
 	<script src="js/script.js"></script>
 </body>
