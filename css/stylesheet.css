@@ -52,6 +52,7 @@ Home Section
 #home {
 	background: none;
 	height: 100%;
+	z-index: 1;
 }
 
 #home-bg-video {
@@ -128,18 +129,7 @@ transition: all .5s;
 	margin-top: 15px;
 }
 
-/* ===================================
-Arrow Down
-====================================*/
 
-.arrow-down {
-	position: absolute;
-	left: 50%;
-	bottom: 20px;
-	width: 32px;
-	height: 32px;
-	margin-left: -16px;
-}
 /* ===================================
 About Section
 ====================================*/
