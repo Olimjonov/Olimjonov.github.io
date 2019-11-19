@@ -42,8 +42,8 @@ Preloader
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 20px;
-  left: 30px;
+  top: 50%;
+  left: 50%;
 }
 
 /* =============
@@ -127,6 +127,24 @@ transition: all .5s;
 
 #home-btn2 {
 	margin-top: 15px;
+}
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    background-color: none;
+    border: 1px solid #212226;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
 }
 
 
@@ -227,6 +245,10 @@ About Section
 footer {
 	background: grey;
 	padding: 30px;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+
 }
 footer p {
 	color: white;
@@ -234,4 +256,136 @@ footer p {
 }
 footer p span{
 	color: #f4c613;
+}
+
+/* =========================================
+Contact
+============================================ */
+
+
+/* Contact Left */
+
+#contact-left p {
+    margin: 25px 0 20px 0;
+}
+
+ul.office-details {
+    list-style: none;
+    padding: 0;
+}
+
+ul.office-details li {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+ul.office-details li i {
+    font-size: 20px;
+    width: 45px;
+}
+
+/* Contact Right */
+
+#contact-right {
+    padding: 25px 30px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+#contact-right h4 {
+    font-size: 24px;
+}
+
+#contact-right p {
+    margin-bottom: 25px;
+}
+
+#contact-right form .form-control {
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#contact-right form textarea.form-control {
+    min-height: 164px;
+}
+
+/* =========================================
+Google Map
+============================================ */
+
+#map {
+    height: 600px;
+}
+
+
+
+/* The Quizz */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+.container_start {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  display: contents;
+  text-align: center;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn-a {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn-a:hover {
+  border-color: black;
+}
+
+.btn-a.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn-a.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
 }
