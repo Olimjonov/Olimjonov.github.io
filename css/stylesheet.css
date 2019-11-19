@@ -315,15 +315,6 @@ ul.office-details li i {
     min-height: 164px;
 }
 
-/* =========================================
-Google Map
-============================================ */
-
-#map {
-    height: 600px;
-}
-
-
 
 /* The Quizz */
 *, *::before, *::after {
