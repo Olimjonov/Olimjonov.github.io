@@ -7,55 +7,8 @@ Preloader
  });
 
 
-
-/* ===============
- Google Map
-==================*/
-$(window).on('load', function () {
-
-    // Map Variables
-    var addressString = 'Istikbol 12, Tashkent, Uzbekistan';
-    var myLatlng = {
-        lat: 41.307010,
-        lng: 69.282943
-    };
-
-    // 1. Render Map
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: myLatlng
-    });
-
-    // 2. Add Marker
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: "Click To See Address"
-    });
-
-    // 3. Add Info Window
-    var infowindow = new google.maps.InfoWindow({
-        content: addressString
-    });
-
-    // Show info window when user clicks marker
-    marker.addListener('click', function () {
-        infowindow.open(map, marker);
-    });
-
-    // 4. Resize Function
-    google.maps.event.addDomListener(window, 'resize', function () {
-
-        var center = map.getCenter();
-        google.maps.event.trigger(map, 'resize');
-        map.setCenter(center);
-
-    });
-
-});
-
  /* Script of the Quiz */
- const startButton = document.getElementById('start-btn')
+const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
