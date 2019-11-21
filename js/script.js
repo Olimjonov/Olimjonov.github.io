@@ -4,10 +4,12 @@ Preloader
  $(window).on('load', function() {
  	$('#status').fadeOut();
  	$('#preloader').delay(350).fadeOut('slow');
- });
+ });  /* There I used JQuery to create a preloader. 
+ When the page will be fully loaded the preloader disappears slowly with the delay of 350ms*/
 
 
  /* Script of the Quiz */
+/* Constants */
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -22,13 +24,17 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 
+
+/* Starting the Quiz */
 function startGame() {
   startButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  shuffledQuestions = questions.sort(() => Math.random() - .5) /* The questions will be chosen randomly  */
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 }
+
+/* Next Question */
 
 function setNextQuestion() {
   resetState()
@@ -48,6 +54,7 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
+/* Restart the quiz */
 
 function resetState() {
   clearStatusClass(document.body)
@@ -86,6 +93,8 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
+
+/* Questions */
 const questions = [
   {
     question: 'Who wrote the 1983 song "Pipes of Peace"?',
@@ -102,7 +111,7 @@ const questions = [
       { text: 'Yes, of course. 80% of buttermilk is butter', correct: false },
       { text: 'Yes, it contains. But only 5% of buttermilk is butter', correct: false },
       { text: 'No, buttermilk does not contain any butter at all', correct: true },
-      { text: 'Google know the answer', correct: true }
+      { text: 'Google know the answer', correct: true } /* We can create even 2 multiple true answers */
     ]
   },
   {
