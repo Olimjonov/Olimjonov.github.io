@@ -112,7 +112,7 @@ Home Section
 }
 
 /* ===================================
-Buttons
+Buttons 
 ====================================*/
 .btn-outline-success { 
 font-family: 'Raleway', sans-serif;
@@ -222,6 +222,7 @@ About Section
 	-webkit-transition: all 400ms ease-in-out;
 	transition: all 400ms ease-in-out;
 }
+
 /* Hover */
 .about-item:hover {
 	background-color: #290a59;
@@ -242,6 +243,10 @@ About Section
 #start_section {
 	background-color: white; 
 }
+
+/* =========================================
+Footer
+============================================ */
 footer {
 	background: grey;
 	padding: 30px;
